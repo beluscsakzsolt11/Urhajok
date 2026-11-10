@@ -83,5 +83,19 @@ namespace Urhajok
             }
             MessageBox.Show("Legnagyobb hatótáv: " + max+" neve: "+maxneve);
         }
+
+        private void sikeresek_Click(object sender, RoutedEventArgs e)
+        {
+            List<Urhajoset> sikeresek = new List<Urhajoset>();
+            foreach(var item in urhajok)
+            {
+                if (item.KuldetesStatusz == "Sikeres")
+                {
+                    sikeresek.Add(item);
+                }
+            }
+            datagrid.ItemsSource = sikeresek;
+            datagrid.Items.Refresh();
+        }
     }
 }
