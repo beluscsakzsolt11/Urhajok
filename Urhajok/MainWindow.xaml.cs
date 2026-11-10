@@ -67,5 +67,21 @@ namespace Urhajok
         {
             MessageBox.Show("Ennyi űrhajó van: "+urhajok.Count());
         }
+
+        private void maxhatotav_Click(object sender, RoutedEventArgs e)
+        {
+            string maxneve = "";
+            int max = 0;
+            foreach(var item in urhajok)
+            {
+                if (item.MaxHatotav > max)
+                {
+                    max = item.MaxHatotav;
+                    maxneve = item.Nev;
+                }
+                
+            }
+            MessageBox.Show("Legnagyobb hatótáv: " + max+" neve: "+maxneve);
+        }
     }
 }

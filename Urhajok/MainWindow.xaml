@@ -15,7 +15,7 @@
             <Label Content="Űrhajó műveletek" FontSize="30" Margin="10"/>
             <Button x:Name="adatbetolt" Width="200" Height="25" Content="Adatok betöltése" Margin="10" Click="adatbetolt_Click"/>
             <Button x:Name="hanyurhajo" Width="200" Height="25" Content="Hány űrhajó van?" Margin="10" Click="hanyurhajo_Click"/>
-            <Button Width="200" Height="25" Content="Melyiknek a legnagyobb a hatótáva?" Margin="10"/>
+            <Button x:Name="maxhatotav" Width="200" Height="25" Content="Melyiknek a legnagyobb a hatótáva?" Margin="10" Click="maxhatotav_Click"/>
             <Button Width="200" Height="25" Content="Kik voltak sikeres küldetésen?" Margin="10"/>
             <Button Width="200" Height="25" Content="Átlagos legénységszám" Margin="10"/>
             <Button Width="200" Height="25" Content="Gyártók szerinti csoportosítás" Margin="10"/>
