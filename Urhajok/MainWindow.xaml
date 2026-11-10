@@ -18,8 +18,9 @@
             <Button x:Name="maxhatotav" Width="200" Height="25" Content="Melyiknek a legnagyobb a hatótáva?" Margin="10" Click="maxhatotav_Click"/>
             <Button x:Name="sikeresek" Width="200" Height="25" Content="Kik voltak sikeres küldetésen?" Margin="10" Click="sikeresek_Click"/>
             <Button x:Name="atlaglegenyseg" Width="200" Height="25" Content="Átlagos legénységszám" Margin="10" Click="atlaglegenyseg_Click"/>
-            <Button Width="200" Height="25" Content="Gyártók szerinti csoportosítás" Margin="10"/>
-            <Button Width="200" Height="25" Content="Keresés név alapján" Margin="10"/>
+            <Button x:Name="gyartoszerint" Width="200" Height="25" Content="Gyártók szerinti csoportosítás" Margin="10" Click="gyartoszerint_Click"/>
+            <Button x:Name="nevkereses" Width="200" Height="25" Content="Keresés név alapján" Margin="10" Click="nevkereses_Click"/>
+            <TextBox Margin="10" x:Name="bevitel"/>
         </StackPanel>
         <StackPanel Grid.Column="1">
             <DataGrid Margin="10" x:Name="datagrid"/>

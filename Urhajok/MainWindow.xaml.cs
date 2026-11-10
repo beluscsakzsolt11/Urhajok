@@ -113,5 +113,24 @@ namespace Urhajok
             MessageBox.Show("Átlagos legénység száma: " + atlag);
         }
 
+        private void gyartoszerint_Click(object sender, RoutedEventArgs e)
+        {
+            datagrid.ItemsSource = urhajok.OrderBy(x => x.Gyarto).ToList();
+        }
+
+        private void nevkereses_Click(object sender, RoutedEventArgs e)
+        {
+            string keresett = bevitel.Text;
+            List<Urhajoset> talalatok = new List<Urhajoset>();
+            foreach (var item in urhajok)
+            {
+                if (item.Nev.Contains(keresett))
+                {
+                    talalatok.Add(item);
+                }
+            }
+            datagrid.ItemsSource = talalatok;
+            datagrid.Items.Refresh();
+        }
     }
 }
