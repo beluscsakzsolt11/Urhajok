@@ -7,6 +7,22 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="260"></ColumnDefinition>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <StackPanel Grid.Column="0">
+            <Label Content="Űrhajó műveletek" FontSize="30" Margin="10"/>
+            <Button Width="200" Height="25" Content="Adatok betöltése" Margin="10"/>
+            <Button Width="200" Height="25" Content="Hány űrhajó van?" Margin="10"/>
+            <Button Width="200" Height="25" Content="Melyiknek a legnagyobb a hatótáva?" Margin="10"/>
+            <Button Width="200" Height="25" Content="Kik voltak sikeres küldetésen?" Margin="10"/>
+            <Button Width="200" Height="25" Content="Átlagos legénységszám" Margin="10"/>
+            <Button Width="200" Height="25" Content="Gyártók szerinti csoportosítás" Margin="10"/>
+            <Button Width="200" Height="25" Content="Keresés név alapján" Margin="10"/>
+        </StackPanel>
+        <StackPanel Grid.Column="1">
+            <DataGrid x:Name="datagrid"/>
+        </StackPanel>
     </Grid>
 </Window>
