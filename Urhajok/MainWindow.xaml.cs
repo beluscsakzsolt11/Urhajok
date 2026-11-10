@@ -97,5 +97,21 @@ namespace Urhajok
             datagrid.ItemsSource = sikeresek;
             datagrid.Items.Refresh();
         }
+
+        private void atlaglegenyseg_Click(object sender, RoutedEventArgs e)
+        {
+            int ossz = 0;
+            foreach(var item in urhajok)
+            {
+                ossz += item.Legenyseg;
+            }
+            double atlag = 0;
+            foreach(var item in urhajok)
+            {
+                atlag = ossz / urhajok.Count();
+            }
+            MessageBox.Show("Átlagos legénység száma: " + atlag);
+        }
+
     }
 }
