@@ -62,5 +62,10 @@ namespace Urhajok
             datagrid.ItemsSource = urhajok;
             datagrid.Items.Refresh();
         }
+
+        private void hanyurhajo_Click(object sender, RoutedEventArgs e)
+        {
+            MessageBox.Show("Ennyi űrhajó van: "+urhajok.Count());
+        }
     }
 }
