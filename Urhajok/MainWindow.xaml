@@ -13,7 +13,7 @@
         </Grid.ColumnDefinitions>
         <StackPanel Grid.Column="0">
             <Label Content="Űrhajó műveletek" FontSize="30" Margin="10"/>
-            <Button Width="200" Height="25" Content="Adatok betöltése" Margin="10"/>
+            <Button x:Name="adatbetolt" Width="200" Height="25" Content="Adatok betöltése" Margin="10" Click="adatbetolt_Click"/>
             <Button Width="200" Height="25" Content="Hány űrhajó van?" Margin="10"/>
             <Button Width="200" Height="25" Content="Melyiknek a legnagyobb a hatótáva?" Margin="10"/>
             <Button Width="200" Height="25" Content="Kik voltak sikeres küldetésen?" Margin="10"/>
@@ -22,7 +22,7 @@
             <Button Width="200" Height="25" Content="Keresés név alapján" Margin="10"/>
         </StackPanel>
         <StackPanel Grid.Column="1">
-            <DataGrid x:Name="datagrid"/>
+            <DataGrid Margin="10" x:Name="datagrid"/>
         </StackPanel>
     </Grid>
 </Window>
